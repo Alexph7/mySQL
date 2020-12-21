@@ -1,10 +1,6 @@
-create table pessoas(
-id int not null auto_increment,
-Nome varchar(30) not null,
-Nascimento date,
-Sexo enum('M','F'),
-Peso decimal(5,2),
-Altura decimal (3,2),
-Nação varchar(20) default 'Brasil',
-primary key (id)
-);
+insert into pessoas values
+(default,'João','1995-11-21','M','69.6','1.68','BRASIL'),
+(default,'Marcia','1999-08-22','F','62.6','1.72',default),
+(default,'Pedro','2000-09-30','M','87.9','1.69',default);
+
+select * from pessoas;
